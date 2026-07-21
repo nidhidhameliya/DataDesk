@@ -1,5 +1,10 @@
 # DataDesk - SQL Practice Platform
 
+## 🌐 Live Demo
+
+Live Application:
+https://data-desk-om5e8xvh7-nidhidhameliyas-projects.vercel.app
+
 DataDesk is a browser-based SQL practice platform designed for software engineering candidates preparing for interviews and placement rounds. It lets you solve real SQL problems directly in the browser using an in-memory SQLite engine powered by sql.js and Web Workers.
 
 ## What this project includes
