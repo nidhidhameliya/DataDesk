@@ -70,7 +70,7 @@ DataDesk is a browser-based SQL practice platform designed for software engineer
    npm run dev
    ```
 
-   The app should open at http://localhost:5173
+   The app should open at http://localhost:5174
 
 5. Build for production
    ```bash
