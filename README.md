@@ -44,10 +44,26 @@ DataDesk is a browser-based SQL practice platform designed for software engineer
    ```
 
    Add your Supabase credentials:
+
+   ```md
+   3. Create a local environment file
+
+   Create a `.env` file in the project root:
+
    ```env
    VITE_SUPABASE_URL=your_supabase_url
    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
    ```
+   ```
+
+   With:
+
+   ```env
+   VITE_SUPABASE_URL=https://dofbulrrxtlxvyknjkcx.supabase.co
+   VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvZmJ1bHJyeHRseHZ5a25qa2N4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ2MzIzOTIsImV4cCI6MjEwMDIwODM5Mn0.7mwOT7dmBH1ZwwPXFjyOub9W-QbS0MW27ImDnqyaosg
+   ```
+
+   For deployment, keep the environment variables in your local `.env` file, add the same values in Vercel Environment Variables, and do not commit any `.env` file to GitHub.
 
 4. Start the development server
    ```bash
