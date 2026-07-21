@@ -1,94 +1,355 @@
-# DataDesk - SQL Practice Platform
+# DataDesk (SQL Practice Environment)
 
 ## 🌐 Live Demo
 
-Live Application:
+🚀 Live Application:  
 https://data-desk-jgkjjokwm-nidhidhameliyas-projects.vercel.app/
 
-DataDesk is a browser-based SQL practice platform designed for software engineering candidates preparing for interviews and placement rounds. It lets you solve real SQL problems directly in the browser using an in-memory SQLite engine powered by sql.js and Web Workers.
+---
 
-## What this project includes
+DataDesk is a professional, browser-based SQL practice platform built specifically for software engineering candidates preparing for technical interviews, coding rounds, and placement drives.
 
-- Practice SQL on 10+ built-in databases such as Airlines, Banking, E-commerce, Hospital, HR, Library, Movies, Music, Sports, and University
-- Work through progressive SQL questions covering joins, aggregations, window functions, subqueries, CTEs, and more
-- Use a schema-aware Monaco editor with autocomplete, result tables, query history, and table previews
-- Explore database schemas with ER-style visuals and join analysis tools
-- Try interview-focused mode and a sandbox for uploading your own CSV or SQLite datasets
-- Track progress and sync learning activity with Supabase-backed authentication and profile features
+The platform allows users to solve complex, real-world SQL problems directly inside the browser without requiring any backend database server. It uses **WebAssembly-powered SQLite (sql.js)** with **Dedicated Web Workers** to create an isolated, high-performance SQL execution environment for every user session.
 
-## Tech stack
+---
 
-- React 19 and Vite 8 for the frontend experience
-- Monaco Editor for the SQL editor
-- sql.js with WebAssembly for browser-based SQLite execution
-- Web Workers to keep the UI responsive during heavy SQL operations
-- Supabase for authentication and progress syncing
-- React Router, lucide-react, and custom CSS for the interface
+# 🚀 Key Features
 
-## Getting started
+## ⚡ Beast-Mode Performance Architecture
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/nidhidhameliya/DataDesk.git
-   cd DataDesk
-   ```
+### Non-Blocking SQL Execution
+- Database initialization and heavy SQL computations run inside dedicated Web Workers.
+- Keeps the React interface smooth and responsive even during complex queries.
 
-2. Install dependencies
-   ```bash
-   npm install
-   ```
+### LRU Query Caching Layer
+- Implements query-level caching to instantly return previously executed queries.
+- Reduces unnecessary SQL computation and improves execution speed.
 
-3. Create a local environment file
-   ```bash
-   cp .env.example .env
-   ```
+### Optimized Frontend Architecture
+- Dynamic module loading using React lazy loading and Suspense.
+- Heavy modules like Monaco Editor, Schema Viewer, and Dashboard components are loaded only when required.
 
-   Add your Supabase credentials:
+### Production-Optimized Builds
+- Vite-based optimized bundling.
+- Efficient dependency chunking for faster production deployments.
 
-   ```md
-   3. Create a local environment file
+---
 
-   Create a `.env` file in the project root:
+# 🗄 Core SQL Execution Engine
 
-   ```env
-   VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
-   ```
+## In-Browser SQLite Runtime
 
-   With:
+Execute real SQL queries directly in the browser using:
 
-   ```env
-   VITE_SUPABASE_URL=https://dofbulrrxtlxvyknjkcx.supabase.co
-   VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRvZmJ1bHJyeHRseHZ5a25qa2N4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ2MzIzOTIsImV4cCI6MjEwMDIwODM5Mn0.7mwOT7dmBH1ZwwPXFjyOub9W-QbS0MW27ImDnqyaosg
-   ```
+- SQLite powered by WebAssembly
+- sql.js execution engine
+- Dedicated Web Workers
 
-   For deployment, keep the environment variables in your local `.env` file, add the same values in Vercel Environment Variables, and do not commit any `.env` file to GitHub.
+Supports advanced SQL concepts:
 
-4. Start the development server
-   ```bash
-   npm run dev
-   ```
+- Complex JOIN operations
+- Aggregations
+- Window Functions
+- Subqueries
+- Common Table Expressions (CTEs)
+- Query Optimization
 
-   The app should open at http://localhost:5174
+---
 
-5. Build for production
-   ```bash
-   npm run build
-   ```
+## 📚 10+ Real-World Database Systems
 
-## Supabase setup
+Practice SQL on realistic, normalized datasets including:
 
-If you want authenticated progress syncing, make sure your Supabase project has the required tables and policies. The SQL schema for user progress is available in the repository under [supabase-schema.sql](supabase-schema.sql).
+- ✈️ Airlines
+- 🏦 Banking
+- 🛒 E-commerce
+- 🏥 Hospital
+- 👥 Human Resources
+- 📚 Library
+- 🎬 Movies
+- 🎵 Music
+- 🏆 Sports
+- 🎓 University
 
-## Project structure
+Each database includes structured schemas and interview-focused SQL problems.
 
-- [src/pages](src/pages) – main app pages such as Home, Practice, and Custom Dataset
-- [src/features](src/features) – practice, interview, AI, auth, and gamification modules
-- [src/data](src/data) – database schemas and SQL questions
-- [src/hooks](src/hooks) – reusable app logic for auth, SQL execution, and gamification
-- [supabase](supabase) – database migration and schema files
+---
 
-## License
+# 🧠 Smart SQL Learning Features
 
-This project is for educational and interview-preparation use.
+## Schema-Aware Monaco SQL Editor
+
+Powered by Monaco Editor (VS Code's editing engine):
+
+- Intelligent SQL autocomplete
+- Table and column suggestions
+- Syntax highlighting
+- Error detection
+- Professional coding experience
+
+---
+
+## Query Execution Plan (EXPLAIN)
+
+Understand how SQLite executes queries:
+
+- Query planning visualization
+- Table scan analysis
+- Performance optimization practice
+- Database indexing concepts
+
+---
+
+## Interactive ER Diagrams
+
+Explore database structures visually:
+
+- Entity Relationship diagrams
+- Table relationships
+- Foreign key connections
+- Interactive zoom and navigation
+
+---
+
+## Query History
+
+Automatically stores recently executed queries:
+
+- Retrieve previous SQL solutions
+- Re-run complex queries
+- Review learning progress
+
+---
+
+## Table Data Preview
+
+Before writing queries:
+
+- Inspect sample table records
+- Understand database structure
+- Explore relationships between tables
+
+---
+
+# 🎯 Gamification & Progress Tracking
+
+## Cloud Progress Sync
+
+Integrated with Supabase for:
+
+- Secure authentication
+- User profiles
+- Progress synchronization
+- Completed question tracking
+
+---
+
+## Analytics Dashboard
+
+Personal learning dashboard with:
+
+- SQL practice statistics
+- Question completion tracking
+- Skill progression
+- Activity monitoring
+- Learning achievements
+
+---
+
+## Hint & Solution System
+
+For difficult problems:
+
+- Progressive hints
+- Step-by-step guidance
+- Complete SQL solutions when required
+
+---
+
+## Sandbox Mode
+
+A safe SQL playground where users can:
+
+- Write custom SQL queries
+- Execute INSERT, UPDATE, DELETE statements
+- Experiment freely
+- Reset database state instantly
+
+---
+
+# 🏗 Architecture & Design
+
+## Modern Frontend Architecture
+
+- React Router based navigation
+- Protected routes for authenticated users
+- Modular feature-based structure
+- Optimized rendering performance
+
+Protected sections include:
+
+```
+/practice
+/profile
+/guide
+```
+
+---
+
+## Premium Design System
+
+Built with:
+
+- Custom Vanilla CSS design system
+- Responsive layouts
+- Minimal modern interface
+- Full Dark Mode support
+
+---
+
+## Isolated Data Layer
+
+Database definitions, schemas, and SQL challenges are separated from UI components for:
+
+- Better maintainability
+- Smaller bundles
+- Cleaner architecture
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React 19
+- Vite 8
+- React Router
+- Vanilla CSS
+
+## SQL Editor
+
+- Monaco Editor
+
+## Database Engine
+
+- sql.js
+- WebAssembly SQLite
+- Dedicated Web Workers
+
+## Authentication & Backend Services
+
+- Supabase
+- PostgreSQL
+- Authentication
+- Row Level Security Policies
+
+## Visualization
+
+- Mermaid.js
+- react-zoom-pan-pinch
+
+---
+
+# 💻 Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/nidhidhameliya/DataDesk.git
+
+cd DataDesk
+```
+
+---
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Configure Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+⚠️ Do not commit `.env` files or secret credentials to GitHub.
+
+---
+
+## Supabase Setup
+
+To enable authentication and progress tracking:
+
+1. Create a Supabase project.
+2. Add your environment variables.
+3. Run the provided database schema:
+
+```
+supabase-schema.sql
+```
+
+This creates the required user progress tables and policies.
+
+---
+
+## Run Development Server
+
+```bash
+npm run dev
+```
+
+The application will start locally:
+
+```
+http://localhost:5174
+```
+
+---
+
+## Build Production Version
+
+```bash
+npm run build
+```
+
+The project is optimized for deployment on:
+
+- Vercel
+- Netlify
+- Static hosting platforms
+
+---
+
+# 📂 Project Structure
+
+```
+DataDesk
+│
+├── src
+│   ├── pages          # Application pages
+│   ├── features       # Practice, Auth, AI, Gamification modules
+│   ├── data           # Database schemas and SQL questions
+│   ├── hooks          # Reusable application logic
+│   └── components     # UI components
+│
+├── supabase           # Database migrations and schema files
+│
+└── public             # Static assets
+```
+
+---
+
+# 📜 License
+
+This project is developed for educational purposes and SQL interview preparation.
+
+---
+
+⭐ Built to help software engineering candidates master SQL through realistic, hands-on database practice.
