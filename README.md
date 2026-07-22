@@ -197,7 +197,11 @@ http://localhost:5174
 
 ## 📸 Screenshots
 
-Screenshots and a polished demo gallery will be added here soon.
+<img width="1919" height="962" alt="Screenshot 2026-07-22 141830" src="https://github.com/user-attachments/assets/a8655fd7-b9ac-499c-98f3-23a4bad2a6f2" />
+
+<img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/337ee7a3-358c-4238-96ea-fdb080a194a2" />
+
+
 
 ---
 
