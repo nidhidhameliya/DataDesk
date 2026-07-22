@@ -3,7 +3,7 @@
 ## 🌐 Live Demo
 
 🚀 Live Application:  
-https://data-desk-jgkjjokwm-nidhidhameliyas-projects.vercel.app/
+https://data-desk-pt7h9odve-nidhidhameliyas-projects.vercel.app/
 
 ---
 
