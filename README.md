@@ -165,7 +165,7 @@ Optional:
 VITE_GROQ_API_KEY=your_groq_api_key
 ```
 
-This key enables optional AI-powered hints, solution review, and sandbox question generation.
+This key enables optional AI-powered hints, solution review, and sandbox question generation
 
 ---
 
