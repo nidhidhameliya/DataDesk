@@ -215,10 +215,6 @@ Potential next steps for the project include:
 
 ---
 
-## 📜 License
 
-This project is developed for educational purposes and SQL interview preparation.
-
----
 
 ⭐ Built to help software engineering candidates master SQL through realistic, hands-on database practice.
